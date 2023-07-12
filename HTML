@@ -1,40 +1,217 @@
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-<!--  If necessary, please modify the charset parameter to specify the        -->
-<!--  character set of your HTML page.                                        -->
-<!--  ----------------------------------------------------------------------  -->
+<html lang="en"><head>
 
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<title>Web to Case</title>
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <FORM> element to your page.             -->
-<!--  ----------------------------------------------------------------------  -->
+<meta charset="UTF-8">
 
-<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<input type=hidden name="orgid" value="00D8b00000355SA">
-<input type=hidden name="retURL" value="http://">
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-<!--  these lines if you wish to test in debug mode.                          -->
-<!--  <input type="hidden" name="debug" value=1>                              -->
-<!--  <input type="hidden" name="debugEmail"                                  -->
-<!--  value="ramil.zaqa1199@gmail.com">                                       -->
-<!--  ----------------------------------------------------------------------  -->
 
-<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
- <br>
-<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
-<br>
-<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
-<br>
-<label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
-<br>
-<label for="description">Description</label><textarea name="description"></textarea><br>
-<br>
-<input type="hidden"  id="external" name="external" value="1" /><br>
-<br>
-<input type="submit" name="submit">
+<link rel="icon" type="image/png" href="https://colorlib.com/etc/cf/ContactFrom_v3/images/icons/favicon.ico">
 
-</form>
+
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/cf/ContactFrom_v3/vendor/bootstrap/css/bootstrap.min.css">
+
+
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/cf/ContactFrom_v3/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/cf/ContactFrom_v3/vendor/animate/animate.css">
+
+
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/cf/ContactFrom_v3/vendor/css-hamburgers/hamburgers.min.css">
+
+
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/cf/ContactFrom_v3/vendor/select2/select2.min.css">
+
+
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/cf/ContactFrom_v3/css/util.css">
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/cf/ContactFrom_v3/css/main.css">
+
+
+
+<meta name="robots" content="noindex, follow">
+
+<script nonce="730e8705-378a-4b53-90b4-1c7213bad0ba">(function(w,d){!function(bg,bh,bi,bj){bg[bi]=bg[bi]||{};bg[bi].executed=[];bg.zaraz={deferred:[],listeners:[]};bg.zaraz.q=[];bg.zaraz._f=function(bk){return function(){var bl=Array.prototype.slice.call(arguments);bg.zaraz.q.push({m:bk,a:bl})}};for(const bm of["track","set","debug"])bg.zaraz[bm]=bg.zaraz._f(bm);bg.zaraz.init=()=>{var bn=bh.getElementsByTagName(bj)[0],bo=bh.createElement(bj),bp=bh.getElementsByTagName("title")[0];bp&&(bg[bi].t=bh.getElementsByTagName("title")[0].text);bg[bi].x=Math.random();bg[bi].w=bg.screen.width;bg[bi].h=bg.screen.height;bg[bi].j=bg.innerHeight;bg[bi].e=bg.innerWidth;bg[bi].l=bg.location.href;bg[bi].r=bh.referrer;bg[bi].k=bg.screen.colorDepth;bg[bi].n=bh.characterSet;bg[bi].o=(new Date).getTimezoneOffset();if(bg.dataLayer)for(const bt of Object.entries(Object.entries(dataLayer).reduce(((bu,bv)=>({...bu[1],...bv[1]})),{})))zaraz.set(bt[0],bt[1],{scope:"page"});bg[bi].q=[];for(;bg.zaraz.q.length;){const bw=bg.zaraz.q.shift();bg[bi].q.push(bw)}bo.defer=!0;for(const bx of[localStorage,sessionStorage])Object.keys(bx||{}).filter((bz=>bz.startsWith("_zaraz_"))).forEach((by=>{try{bg[bi]["z_"+by.slice(7)]=JSON.parse(bx.getItem(by))}catch{bg[bi]["z_"+by.slice(7)]=bx.getItem(by)}}));bo.referrerPolicy="origin";bo.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(bg[bi])));bn.parentNode.insertBefore(bo,bn)};["complete","interactive"].includes(bh.readyState)?zaraz.init():bg.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
+
+<body>
+
+<div class="bg-contact3" style="background-image: url('https://colorlib.com/etc/cf/ContactFrom_v3/images/bg-01.jpg');">
+
+<div class="container-contact3">
+
+<div class="wrap-contact3">
+
+<form class="contact3-form validate-form">
+
+<span class="contact3-form-title"> Weclome! </span>
+<h3>Dear, customer. Please fill out the form below.</h3>
+
+
+
+
+
+
+<div class="wrap-input3 validate-input" data-validate="Name is required">
+
+<input class="input3" type="text" name="name" placeholder="Your Name">
+
+<span class="focus-input3"></span>
+
+</div>
+
+<div class="wrap-input3 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+
+<input class="input3" type="text" name="email" placeholder="Your Email">
+
+<span class="focus-input3"></span>
+
+
+
+<div class="wrap-input3 validate-input" data-validate="“Phone" is="" required="">
+
+</div>
+<input class="input3" type="number" name="name" placeholder="Phone" number="">
+<div class="wrap-input3 validate-input" data-validate="“Subject" is="" required"="">
+
+</div>
+<input class="input3" type="text" name="name" placeholder="Subject">
+<div class="wrap-input3 validate-input" data-validate="Description is required">
+
+</div>
+<input class="input3" type="text" name="name" placeholder="Description">
+
+<div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<span class="focus-input3"></span>
+
+</div>
+
+<div class="wrap-input3 input3-select">
+
+<div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<span class="focus-input3"></span>
+
+</div>
+
+<div class="wrap-input3 validate-input" data-validate="“Source" is="" required"="">
+
+<textarea class="input3" name="message" placeholder="Source"></textarea>
+
+<span class="focus-input3"></span>
+
+</div>
+
+<div class="container-contact3-form-btn">
+
+<button class="contact3-form-btn">
+
+Submit
+
+</button>
+
+
+
+
+
+
+
+
+
+
+
+<div id="dropDownSelect1"></div>
+
+
+
+<script src="https://colorlib.com/etc/cf/ContactFrom_v3/vendor/jquery/jquery-3.2.1.min.js"></script>
+
+
+
+<script src="https://colorlib.com/etc/cf/ContactFrom_v3/vendor/bootstrap/js/popper.js"></script>
+
+<script src="https://colorlib.com/etc/cf/ContactFrom_v3/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+
+
+<script src="https://colorlib.com/etc/cf/ContactFrom_v3/vendor/select2/select2.min.js"></script>
+
+<script>
+
+$(".selection-2").select2({
+
+minimumResultsForSearch: 20,
+
+dropdownParent: $('#dropDownSelect1')
+
+});
+
+</script>
+
+
+
+<script src="https://colorlib.com/etc/cf/ContactFrom_v3/js/main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></form></div></div></div></body></html>
