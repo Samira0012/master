@@ -3,6 +3,7 @@
 <head>
     <title>Web to Case</title>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="https://colorlib.com/etc/cf/ContactFrom_v3/images/icons/favicon.ico">
     <link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/cf/ContactFrom_v3/vendor/bootstrap/css/bootstrap.min.css">
@@ -33,6 +34,14 @@
                     </div>
                     <div class="wrap-input3 validate-input" data-validate="Phone is required">
                         <input class="input3" id="phone" maxlength="40" name="phone" type="text" placeholder="Phone">
+                    </div>
+                    <div class="wrap-input3 validate-input">
+                        <select class="input3" id="priority" name="priority">
+                            <option value="">--None--</option>
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                        </select>
                     </div>
                     <div class="wrap-input3 validate-input" data-validate="Subject is required">
                         <input class="input3" id="subject" maxlength="80" name="subject" type="text" placeholder="Subject">
